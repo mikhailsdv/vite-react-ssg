@@ -70,7 +70,7 @@
     "dev": "unbuild --stub",
     "lint": "eslint .",
     "test": "pnpm -r --filter=./examples/* build && vitest run",
-    "prepublishOnly": "nr build",
+    "prepublishOnly": "npm run build",
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
     "typecheck": "tsc --noEmit"
